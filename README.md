@@ -6,11 +6,10 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-00F5FF?style=for-the-badge&logo=vercel&logoColor=black)](https://your-portfolio-url.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-handle)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/your-handle)
-[![Discord](https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-invite)
-[![Email](https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:you@example.com)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-00F5FF?style=for-the-badge&logo=vercel&logoColor=black)](https://playful-biscochitos-d342ae.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aman--thakur/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/hey_amanthakur)
+[![Email](https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thakuraman22july@gmail.com)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=jhonsnow456&label=UPLINK%20VIEWS&color=00F5FF&style=for-the-badge)
 ![Followers](https://img.shields.io/github/followers/jhonsnow456?label=FOLLOWERS&style=for-the-badge&color=302b63&labelColor=0f0c29)
@@ -301,11 +300,10 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 | Platform | Link |
 |---|---|
-| 💼 LinkedIn | [linkedin.com/in/your-handle](https://linkedin.com/in/your-handle) |
-| 🐦 X | [x.com/your-handle](https://x.com/your-handle) |
-| 🌐 Portfolio | [your-portfolio-url.com](https://your-portfolio-url.com) |
-| 📧 Email | you@example.com |
-| 💬 Discord | your-handle |
+| 💼 LinkedIn | [linkedin.com/in/aman--thakur](https://www.linkedin.com/in/aman--thakur/) |
+| 🐦 X | [x.com/hey_amanthakur](https://x.com/hey_amanthakur) |
+| 🌐 Portfolio | [playful-biscochitos-d342ae.netlify.app](https://playful-biscochitos-d342ae.netlify.app/) |
+| 📧 Email | thakuraman22july@gmail.com |
 
 </div>
 
@@ -316,7 +314,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 <div align="center">
 
 [![Sponsor](https://img.shields.io/badge/Sponsor_Me-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/jhonsnow456)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/your-handle)
+[![Support](https://img.shields.io/badge/SUPPORT-FF2E63?style=for-the-badge&logo=razorpay&logoColor=white)](https://razorpay.me/@amanthakur7343)
 
 </div>
 

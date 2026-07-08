@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Generated RPG stats (produced by the CI workflow)
+assets/rpg-stats.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local secrets / env files
+.env
+*.local
