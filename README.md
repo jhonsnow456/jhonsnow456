@@ -66,9 +66,9 @@ sprint:
 <div align="center">
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jhonsnow456&theme=tokyonight&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&hide_border=true" width="49%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jhonsnow456&theme=tokyonight&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&hide_border=true" width="34%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jhonsnow456&theme=tokyonight&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&hide_border=true" width="49%"/>
 
-<img src="https://streak-stats.demolab.com?user=jhonsnow456&theme=tokyonight&hide_border=true&background=0d1117&ring=00F5FF&fire=FF2E63&currStreakLabel=00F5FF" width="70%"/>
+<img src="https://streak-stats.demolab.com?user=jhonsnow456&theme=tokyonight&hide_border=true&background=0d1117&ring=00F5FF&fire=FF2E63&currStreakLabel=00F5FF" width="100%"/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=jhonsnow456&theme=tokyo-night&bg_color=0d1117&color=00F5FF&line=FF2E63&point=ffffff&hide_border=true" width="100%"/>
 
