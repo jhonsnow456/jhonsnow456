@@ -1,0 +1,48 @@
+name: Update README Dynamic Sections
+
+on:
+  schedule:
+    - cron: "0 3 * * *"    # once a day at 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1) Recent activity -> Quest Log block
+      - name: Update recent activity (Quest Log)
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GH_TOKEN: ${{ secrets.RM_TOKEN }}
+          COMMIT_MSG: "chore: sync quest log [skip ci]"
+
+      # 2) Latest blog posts (Dev.to / Medium / Hashnode RSS)
+      - name: Update latest blog posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: |
+            "https://dev.to/feed/your-handle"
+            "https://medium.com/feed/@your-handle"
+          max_post_count: 3
+          comment_tag_name: "LATEST WRITING"
+
+      # 3) Custom RPG XP / Achievements engine (see docs/SETUP.md)
+      - name: Compute RPG stats + achievements
+        run: |
+          python3 scripts/compute_rpg_stats.py
+        env:
+          GH_TOKEN: ${{ secrets.RM_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit updated stats
+        run: |
+          git config user.name "readme-bot"
+          git config user.email "actions@github.com"
+          git add assets/rpg-stats.json README.md
+          git diff --cached --quiet || git commit -m "chore: sync RPG stats + achievements [skip ci]"
+          git push
