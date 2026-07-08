@@ -208,6 +208,12 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 <div align="center">
 
+![Trophy](https://github-trophy.vercel.app/?username=jhonsnow456&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8)
+
+</div>
+
+<div align="center">
+
 | Milestone | Status |
 |---|---|
 | 100 commits in a year | ✅ / 🔒 *(auto via workflow)* |
@@ -219,12 +225,11 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 </div>
 
-> The decorative trophy image previously shown here used
-> `github-profile-trophy.vercel.app`, which is now `DEPLOYMENT_DISABLED`
-> (402), so it was removed to avoid a dead image. The milestone table above
-> is the self-contained alternative and is still flipped ✅/🔒 by the
-> workflow. See `docs/SETUP.md → Achievements Engine` if you self-host the
-> trophy service and want the image back.
+> The trophy image is served by `github-trophy.vercel.app` (the original
+> `github-profile-trophy.vercel.app` is `DEPLOYMENT_DISABLED` / 402, so this
+> mirror is used instead). The milestone table above is self-contained and is
+> still flipped ✅/🔒 by the workflow — see
+> `docs/SETUP.md → Achievements Engine`.
 
 ---
 
