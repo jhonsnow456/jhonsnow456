@@ -88,11 +88,13 @@ Every dynamic section is designed to fail safely:
 - If `RM_TOKEN` is missing or expired, `update-readme.yml` fails on just
   that step — the README keeps its last successfully-synced content rather
   than showing an error.
-- If a third-party stats service (github-readme-stats, streak-stats, etc.)
-  is down, the `<img>` tag simply renders as a broken image icon in that one
-  card — it does not break the rest of the page. If you see broken badges
-  for more than a day, check https://github-readme-stats.vercel.app/api/status
-  or self-host the service (see below).
+- If a third-party stats service is down, the `<img>` tag simply renders as
+  a broken image icon in that one card — it does not break the rest of the
+  page. The public `github-readme-stats` instance is currently paused
+  (returns 503), so this README now uses `github-profile-summary-cards`
+  instead. For maximum reliability, self-host `github-readme-stats` on your
+  own Vercel account (see below) and repoint the two `<img>` URLs at your
+  instance.
 - LeetCode/Codeforces/etc. are static link badges, not live widgets, by
   design — free third-party "stat card" services for these platforms are
   unreliable and rotate frequently. Swapping in a live one later is a
@@ -103,9 +105,12 @@ Every dynamic section is designed to fail safely:
 
 ## 6. Optional premium enhancements
 
-- **Self-host github-readme-stats**: fork the repo, deploy to Vercel with
-  your own token, and point the `<img>` URLs at your instance. Removes
-  rate-limit risk from the shared public instance entirely.
+- **Self-host github-readme-stats**: the shared public instance
+  (`github-readme-stats.vercel.app`) is currently paused/503, which is why
+  this README uses `github-profile-summary-cards` by default. For the exact
+  original cards, fork `github-readme-stats`, deploy to Vercel with your own
+  token, and point the two stat/language `<img>` URLs at your instance.
+  Removes reliability risk from any shared public instance entirely.
 - **WakaTime integration**: if you install the WakaTime CLI plugin in your
   editor, `github-readme-stats` can render a weekly coding-activity card
   automatically once your WakaTime API key is added as a secret

@@ -65,8 +65,8 @@ sprint:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=jhonsnow456&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F5FF&icon_color=00F5FF&text_color=c9d1d9&count_private=true" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jhonsnow456&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9" width="34%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=jhonsnow456&theme=tokyonight&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&hide_border=true" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jhonsnow456&theme=tokyonight&bg_color=0d1117&title_color=00F5FF&text_color=c9d1d9&hide_border=true" width="34%"/>
 
 <img src="https://streak-stats.demolab.com?user=jhonsnow456&theme=tokyonight&hide_border=true&background=0d1117&ring=00F5FF&fire=FF2E63&currStreakLabel=00F5FF" width="70%"/>
 
@@ -74,9 +74,11 @@ sprint:
 
 </div>
 
-> All four widgets above are live third-party services (github-readme-stats,
-> streak-stats, activity-graph) — no tokens required for public data; see
-> `docs/SETUP.md` if you want private-contribution counts included.
+> The stats and language widgets above are served by
+> `github-profile-summary-cards` (the public `github-readme-stats` instance is
+> paused/503 as of writing); the streak and activity widgets are
+> `streak-stats` and `github-readme-activity-graph`. No tokens required for
+> public data — see `docs/SETUP.md` to self-host for reliability.
 
 ---
 
@@ -206,12 +208,6 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 <div align="center">
 
-![Trophy](https://github-profile-trophy.vercel.app/?username=jhonsnow456&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8)
-
-</div>
-
-<div align="center">
-
 | Milestone | Status |
 |---|---|
 | 100 commits in a year | ✅ / 🔒 *(auto via workflow)* |
@@ -223,9 +219,12 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 </div>
 
-> These custom badges aren't a native GitHub API — the workflow checks your
-> stats against each threshold and flips ✅/🔒 by editing this table. See
-> `docs/SETUP.md → Achievements Engine`.
+> The decorative trophy image previously shown here used
+> `github-profile-trophy.vercel.app`, which is now `DEPLOYMENT_DISABLED`
+> (402), so it was removed to avoid a dead image. The milestone table above
+> is the self-contained alternative and is still flipped ✅/🔒 by the
+> workflow. See `docs/SETUP.md → Achievements Engine` if you self-host the
+> trophy service and want the image back.
 
 ---
 
