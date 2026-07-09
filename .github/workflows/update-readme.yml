@@ -16,10 +16,12 @@ jobs:
 
       # 1) Recent activity -> Quest Log block
       - name: Update recent activity (Quest Log)
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GH_TOKEN: ${{ secrets.RM_TOKEN }}
+        uses: Athul/github-activity-readme@v2
+        with:
+          GH_USERNAME: ${{ github.repository_owner }}
           COMMIT_MSG: "chore: sync quest log [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.RM_TOKEN }}
 
       # 2) Latest blog posts (Dev.to / Medium / Hashnode RSS)
       - name: Update latest blog posts
