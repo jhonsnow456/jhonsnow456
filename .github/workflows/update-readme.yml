@@ -29,7 +29,7 @@ jobs:
         with:
           feed_list: |
             "https://dev.to/feed/your-handle"
-            "https://medium.com/feed/@your-handle"
+            "https://medium.com/@thakuraman22july"
           max_post_count: 3
           comment_tag_name: "LATEST WRITING"
 
