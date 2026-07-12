@@ -12,14 +12,14 @@ jobs:
   update-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # 1) Recent activity -> Quest Log block
       - name: Update recent activity (Quest Log)
         uses: TheDanniCraft/activity-log@v1
         with:
-          GH_USERNAME: ${{ github.repository_owner }}
-          COMMIT_MSG: "chore: sync quest log [skip ci]"
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          COMMIT_MESSAGE: "chore: sync quest log [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.RM_TOKEN }}
 
