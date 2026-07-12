@@ -16,7 +16,7 @@ jobs:
 
       # 1) Recent activity -> Quest Log block
       - name: Update recent activity (Quest Log)
-        uses: Athul/github-activity-readme@v2
+        uses: TheDanniCraft/activity-log@v1
         with:
           GH_USERNAME: ${{ github.repository_owner }}
           COMMIT_MSG: "chore: sync quest log [skip ci]"
