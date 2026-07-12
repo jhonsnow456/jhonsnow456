@@ -87,17 +87,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RM_TOKEN }}
 
-      # 2) Latest blog posts (Dev.to / Medium / Hashnode RSS)
-      - name: Update latest blog posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: |
-            https://dev.to/feed/hey-amanthakur
-            https://medium.com/feed/@thakuraman22july
-          max_post_count: 3
-          comment_tag_name: "LATEST WRITING"
-
-      # 3) Custom RPG XP / Achievements engine (see docs/SETUP.md)
+      # 2) Custom RPG XP / Achievements engine (see docs/SETUP.md)
       - name: Compute RPG stats + achievements
         run: |
           python3 scripts/compute_rpg_stats.py
