@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=JHONSNOW456&fontSize=60&fontColor=00F5FF&animation=fadeIn&fontAlignY=38&desc=SYSTEM%20ONLINE%20%7C%20FULL%20STACK%20%2F%20AI%20ENGINEER&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=HEY-AMANTHAKUR&fontSize=60&fontColor=00F5FF&animation=fadeIn&fontAlignY=38&desc=SYSTEM%20ONLINE%20%7C%20FULL%20STACK%20%2F%20AI%20ENGINEER&descAlignY=58&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=00F5FF&center=true&vCenter=true&width=650&lines=Initializing+Developer+Runtime...;Booting+Neural+Interface...;Full+Stack+Engineer+%7C+AI+Systems+Builder;Building+things+that+outlive+the+hype+cycle;Status%3A+Online+%7C+Accepting+New+Missions" alt="Typing SVG" />
 
