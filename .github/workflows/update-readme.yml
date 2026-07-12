@@ -30,6 +30,7 @@ jobs:
           feed_list: |
             "https://dev.to/feed/hey-amanthakur"
             "https://medium.com/feed/@thakuraman22july"
+            "https://pub.hashnode.com/@hey-amanthakur"
           max_post_count: 3
           comment_tag_name: "LATEST WRITING"
 
