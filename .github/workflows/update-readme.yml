@@ -17,7 +17,7 @@ jobs:
       # 1) Recent activity -> Quest Log block
       - name: Update recent activity (Quest Log)
         run: |
-          EVENTS=$(curl -s -H "Authorization: token ${{ secrets.RM_TOKEN }}" \
+          EVENTS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             "https://api.github.com/users/${{ github.repository_owner }}/events/public?per_page=10")
           
           QUEST_LOG=""
@@ -57,7 +57,7 @@ jobs:
                 if [ "$REF_TYPE" = "branch" ]; then
                   EMOJI="🌿"; ACTION="Created branch in"
                 else
-                  EMOJI="🏷️"; ACTION="Created tag in"
+                  EMOJI="🏷"; ACTION="Created tag in"
                 fi
                 ;;
               DeleteEvent) EMOJI="🔥"; ACTION="Deleted branch in"; ;;
@@ -76,13 +76,14 @@ jobs:
             QUEST_LOG="- 📝 No recent activity found"
           fi
           
-          sed -i "/<!-- QUEST_LOG_START -->/,/<!-- QUEST_LOG_END -->/{
-            /<!-- QUEST_LOG_START -->/!{
-              /<!-- QUEST_LOG_END -->/!d
-            }
-            /<!-- QUEST_LOG_START -->/a\\
-          $(echo -e "$QUEST_LOG")
-          }" README.md
+          printf "%b" "$QUEST_LOG" > /tmp/quest_log.md
+          
+          awk '
+            /<!-- QUEST_LOG_START -->/ { print; system("cat /tmp/quest_log.md"); next }
+            /<!-- QUEST_LOG_END -->/ { print; next }
+            /<!-- QUEST_LOG_START -->/,/<!-- QUEST_LOG_END -->/ { next }
+            { print }
+          ' README.md > /tmp/README.md && mv /tmp/README.md README.md
         env:
           GITHUB_TOKEN: ${{ secrets.RM_TOKEN }}
 
