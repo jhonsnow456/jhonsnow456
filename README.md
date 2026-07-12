@@ -269,13 +269,13 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 ## ✍️ LATEST WRITING
 
-<!-- LATEST WRITING START -->
+<!-- LATEST WRITING:START -->
 *(auto-pulled from your Dev.to / Medium / Hashnode RSS feed)*
 
 - 📄 *[Post title auto-populated]* — Dev.to
 - 📄 *[Post title auto-populated]* — Medium
 - 📄 *[Post title auto-populated]* — Hashnode
-<!-- LATEST WRITING END -->
+<!-- LATEST WRITING:END -->
 
 > Wired via `blog-post-workflow` in `docs/SETUP.md`. Add your feed URL as a
 > repo secret and it fills in automatically on the next scheduled run.
