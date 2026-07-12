@@ -1,7 +1,7 @@
 # Setup & Customization Guide
 
 This README is designed to live in a special repository: one whose name
-**exactly matches your GitHub username** (e.g. `github.com/jhonsnow456/jhonsnow456`).
+**exactly matches your GitHub username** (e.g. `github.com/hey-amanthakur/hey-amanthakur`).
 That's the only repo type GitHub renders as your profile page.
 
 ---
@@ -9,7 +9,7 @@ That's the only repo type GitHub renders as your profile page.
 ## 1. Folder structure
 
 ```
-jhonsnow456/                       ← repo name MUST equal your username
+hey-amanthakur/                       ← repo name MUST equal your username
 ├── README.md                      ← the profile page itself
 ├── assets/
 │   ├── README.md
@@ -115,7 +115,7 @@ Every dynamic section is designed to fail safely:
   editor, `github-readme-stats` can render a weekly coding-activity card
   automatically once your WakaTime API key is added as a secret
   (`WAKATIME_API_KEY`) — add:
-  `![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=jhonsnow456)`
+  `![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=hey-amanthakur)`
 - **LeetCode live card**: services like `leetcode-stats-card` (community
   Vercel deployments) can replace the static LeetCode badge — verify uptime
   before relying on one, as these are unofficial and occasionally go dark.
