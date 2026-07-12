@@ -251,6 +251,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 ## 📜 CONTRIBUTION QUEST LOG
 
+<!-- QUEST_LOG_START -->
 *(auto-refreshed from your 10 most recent public events — see workflow)*
 
 - ✔ Merged PR — performance fix in `service-api`
@@ -259,6 +260,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 - ✔ Opened RFC for new agent-orchestration module
 - ✔ Reviewed 4 external pull requests
 - ✔ Fixed flaky CI pipeline
+<!-- QUEST_LOG_END -->
 
 > This list is a placeholder shape — the `update-readme.yml` workflow queries
 > the GitHub Events API and rewrites this block automatically every 24h.
