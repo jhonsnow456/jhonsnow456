@@ -42,10 +42,9 @@ status:
 
 ```yaml
 last_deploy:
-  repo:      "auto-fetched via Actions"
+  repo:      "hey-amanthakur"
   branch:    "main"
   commit:    "see Recent Activity feed"
-  updated:   "refreshed every 24h by CI"
 sprint:
   current:   "Sprint 14 — Agent Tooling"
   progress:  "▓▓▓▓▓▓▓░░░ 70%"
@@ -55,9 +54,7 @@ sprint:
 </tr>
 </table>
 
-> **Note:** the values above marked "auto-fetched" are populated by the
-> `update-readme.yml` workflow described in `docs/SETUP.md` — nothing here
-> is hand-typed once that workflow is wired to your repo and token.
+
 
 ---
 
@@ -87,7 +84,7 @@ sprint:
 <div align="center">
 <table>
 <tr>
-<td align="center">🏆<br/><b>LEVEL</b><br/><sub>auto-calculated from commits/stars/PRs — see workflow</sub></td>
+<td align="center">🏆<br/><b>LEVEL</b><br/><sub>commits + stars + PRs</sub></td>
 <td align="center">⚔️<br/><b>RANK</b><br/><sub>Contributor → Maintainer → Core → Legend</sub></td>
 <td align="center">🔥<br/><b>STREAK</b><br/><sub>pulled from streak-stats above</sub></td>
 <td align="center">⭐<br/><b>STARS EARNED</b><br/><sub>![Stars](https://img.shields.io/github/stars/hey-amanthakur?style=flat-square&color=00F5FF&label=)</sub></td>
@@ -104,17 +101,11 @@ WEEKLY XP     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░  comm
 <details>
 <summary><b>⚙️ How XP is calculated (click to expand)</b></summary>
 
-XP is not a GitHub-native metric, so it's derived in the update workflow from
-the GitHub GraphQL API using a simple formula you can tune:
-
 ```
 XP = (commits * 1) + (pull_requests_merged * 5) + (issues_closed * 3)
    + (stars_received * 2) + (repos_created * 4)
 LEVEL = floor(sqrt(XP) / 4)
 ```
-
-The workflow writes the result into `assets/rpg-stats.json`, and this section
-reads from it. See `docs/SETUP.md → RPG Engine`.
 
 </details>
 
@@ -134,10 +125,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 <tr><td><b>Problem Solving</b></td><td>█████████████████░░░ 85%</td><td>Lv.9</td></tr>
 </table>
 
-> Replace the bar lengths and levels above with your real numbers — these are
-> illustrative placeholders sized for a mid-level generalist profile. If you
-> want them auto-generated from LeetCode/Codeforces solve counts, hook them up
-> in `update-readme.yml` (see setup guide).
+> Replace the bar lengths and levels above with your real numbers.
 
 ---
 
@@ -225,11 +213,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 </div>
 
-> The trophy image is served by `github-trophy.vercel.app` (the original
-> `github-profile-trophy.vercel.app` is `DEPLOYMENT_DISABLED` / 402, so this
-> mirror is used instead). The milestone table above is self-contained and is
-> still flipped ✅/🔒 by the workflow — see
-> `docs/SETUP.md → Achievements Engine`.
+> The trophy image is served by `github-trophy.vercel.app`.
 
 ---
 
@@ -251,19 +235,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 ## 📜 CONTRIBUTION QUEST LOG
 
-<!-- QUEST_LOG_START -->
-*(auto-refreshed from your 10 most recent public events — see workflow)*
-
-- ✔ Merged PR — performance fix in `service-api`
-- ✔ Released `v2.3.0` of a core library
-- ✔ Closed 3 issues in `project-x`
-- ✔ Opened RFC for new agent-orchestration module
-- ✔ Reviewed 4 external pull requests
-- ✔ Fixed flaky CI pipeline
-<!-- QUEST_LOG_END -->
-
-> This list is a placeholder shape — the `update-readme.yml` workflow queries
-> the GitHub Events API and rewrites this block automatically every 24h.
+> Check my [GitHub profile](https://github.com/hey-amanthakur) for the latest activity.
 
 ---
 
@@ -316,7 +288,7 @@ reads from it. See `docs/SETUP.md → RPG Engine`.
 
 *"Code is the closest thing we have to magic — so build responsibly."*
 
-![Last Updated](https://img.shields.io/badge/dynamic/json?color=00F5FF&label=LAST%20SYNC&query=%24.updated&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhey-amanthakur%2Fhey-amanthakur&style=for-the-badge)
+
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
 

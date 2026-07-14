@@ -12,14 +12,10 @@ That's the only repo type GitHub renders as your profile page.
 hey-amanthakur/                       ← repo name MUST equal your username
 ├── README.md                      ← the profile page itself
 ├── assets/
-│   ├── README.md
-│   └── rpg-stats.json             ← generated, do not hand-edit
-├── scripts/
-│   └── compute_rpg_stats.py       ← XP / achievements engine
+│   └── README.md
 ├── .github/
 │   └── workflows/
-│       ├── snake.yml              ← contribution snake animation
-│       └── update-readme.yml      ← quest log, blog feed, RPG stats
+│       └── snake.yml              ← contribution snake animation
 └── docs/
     └── SETUP.md                   ← this file
 ```
@@ -44,14 +40,7 @@ hey-amanthakur/                       ← repo name MUST equal your username
 
 | Secret name | Used by | Scopes needed | Notes |
 |---|---|---|---|
-| `RM_TOKEN` | `update-readme.yml` (quest log + RPG script) | `public_repo`, `read:user` | A **classic Personal Access Token**, not the default `GITHUB_TOKEN` — the activity/quest-log action and cross-API search calls need a token tied to your account, not the repo-scoped default. |
 | `GITHUB_TOKEN` | `snake.yml` | auto-provided by Actions | No setup needed; make sure the repo's Actions have **write** permission (Settings → Actions → General → Workflow permissions → Read and write). |
-
-To add `RM_TOKEN`:
-1. GitHub → Settings → Developer settings → Personal access tokens →
-   Tokens (classic) → Generate new token, scopes `public_repo` + `read:user`.
-2. In your profile repo: Settings → Secrets and variables → Actions →
-   New repository secret → name it `RM_TOKEN`, paste the value.
 
 ---
 
@@ -66,15 +55,6 @@ To add `RM_TOKEN`:
   metric any API exposes. Keep them honest; recruiters notice inflated bars.
 - **Tech Arsenal badges**: trim to tools you actually use. More isn't better
   here — a focused 20-badge arsenal reads stronger than 60.
-- **RPG XP formula**: edit the weights directly in
-  `scripts/compute_rpg_stats.py::compute_xp`. The current formula is a
-  reasonable default, not gospel.
-- **Achievements thresholds**: same file, `compute_achievements`. Add your
-  own conditions (e.g. hackathon wins) as extra boolean flags, then add a
-  matching row in the README table.
-- **Blog feed**: replace the two feed URLs in `update-readme.yml` under
-  `feed_list` with your actual Dev.to/Medium/Hashnode RSS URLs. Remove the
-  ones you don't use.
 - **Snake animation**: if you fork/rename the repo, update the two
   `raw.githubusercontent.com/.../output/...` URLs in the README's
   "GitHub Analytics Room" section to match your new username/repo.
@@ -85,9 +65,6 @@ To add `RM_TOKEN`:
 
 Every dynamic section is designed to fail safely:
 
-- If `RM_TOKEN` is missing or expired, `update-readme.yml` fails on just
-  that step — the README keeps its last successfully-synced content rather
-  than showing an error.
 - If a third-party stats service is down, the `<img>` tag simply renders as
   a broken image icon in that one card — it does not break the rest of the
   page. The public `github-readme-stats` instance is currently paused
